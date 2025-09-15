@@ -49,6 +49,7 @@ apps:
       - home
       - network
       - network-bind
+      - network-control
       - opengl
       - shmem
 
@@ -58,12 +59,14 @@ apps:
     plugs:
       - home
       - network
+      - network-control
       - shmem
   winetricks:
     extensions: [gnome]
     command: bin/sommelier winetricks
     plugs:
       - network
+      - network-control
 
 parts:
   cncra2yr:
