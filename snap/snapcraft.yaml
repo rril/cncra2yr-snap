@@ -49,6 +49,7 @@ apps:
       - home
       - network
       - network-bind
+      - network-observe
       - network-control
       - opengl
       - shmem
@@ -59,6 +60,8 @@ apps:
     plugs:
       - home
       - network
+      - network-bind
+      - network-observe
       - network-control
       - shmem
   winetricks:
@@ -66,6 +69,7 @@ apps:
     command: bin/sommelier winetricks
     plugs:
       - network
+      - network-observe
       - network-control
 
 parts:
